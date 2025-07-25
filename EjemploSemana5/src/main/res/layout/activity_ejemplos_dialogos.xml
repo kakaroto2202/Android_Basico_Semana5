@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Actavity.MainActivity">
+
+    <!-- TextView para mostrar resultados -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diálogos en Android"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textStyle="bold" />
+
+    <!-- Botón para AlertDialog -->
+    <Button
+        android:id="@+id/btnAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar AlertDialog"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón para ProgressDialog -->
+    <Button
+        android:id="@+id/btnProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar ProgressDialog"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón para DatePickerDialog -->
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar DatePickerDialog"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón para TimePickerDialog -->
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar TimePickerDialog"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

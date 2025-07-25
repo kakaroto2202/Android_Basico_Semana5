@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Compartir Contenido"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="24dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Título (opcional)">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="Contenido a compartir">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextContenido"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:maxLines="5" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opciones de compartir:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnCompartirTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📄 Compartir Texto"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/btnCompartirUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔗 Compartir como URL"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnCompartirImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🌐 Compartir Universal"
+        android:textSize="16sp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La aplicación mostrará todas las opciones disponibles: WhatsApp, Facebook, Twitter, Instagram, Email, SMS, etc."
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+</LinearLayout>

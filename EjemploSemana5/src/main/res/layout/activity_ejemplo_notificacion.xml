@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programador de Notificaciones"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/tv_selected_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No se ha seleccionado ninguna hora"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:textColor="#666666" />
+
+    <Button
+        android:id="@+id/btn_select_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Hora"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/btn_schedule_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Programar Notificación"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#2196F3" />
+
+    <Button
+        android:id="@+id/btn_cancel_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar Notificación"
+        android:textSize="16sp"
+        android:backgroundTint="#F44336" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo para escribir el nombre de la imagen -->
+    <EditText
+        android:id="@+id/etImageName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la imagen (ej. foto_perfil)"
+        android:inputType="text"/>
+
+    <!-- Botón para disparar la carga -->
+    <Button
+        android:id="@+id/btnLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cargar imagen"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Imagen que se actualizará -->
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Vista de la imagen"
+        app:srcCompat="@drawable/imagen" />
+
+</LinearLayout>

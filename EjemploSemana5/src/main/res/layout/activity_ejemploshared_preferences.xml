@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selector de Colores"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Etiqueta del Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un color:"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Spinner para seleccionar colores -->
+    <Spinner
+        android:id="@+id/spinner_colores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp" />
+
+    <!-- Texto informativo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El color seleccionado se guardará automáticamente y se mantendrá la próxima vez que abras la aplicación."
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:alpha="0.7" />
+
+    <!-- Espacio flexible para centrar el contenido -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="💡 Tip: El fondo cambiará según tu selección"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:alpha="0.6" />
+
+</LinearLayout>
